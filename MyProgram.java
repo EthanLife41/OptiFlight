@@ -104,12 +104,9 @@ public class MyProgram {
                     //Prints information about the cheapest price of a flight route right now
                     cheapestFlight cheapest = new cheapestFlight();
                     cheapest.CheapestFlight(flights);
-                    System.out.println("\n__________Cheapest Flight__________\n");
-                    System.out.println("The cheapest " + cheapest.getTravelClass() + " flight from " + cheapest.getAirports() + " is:\n \n" + cheapest.getAirline() + " Flight " + cheapest.getFlightNumber() + " for " + cheapest.getPrice() + "\n"); 
-                    System.out.println("Info:\n \nPlane Type: " + cheapest.getAirplane());
-                    System.out.println("Flight Time: " + cheapest.getDuration());
-                    System.out.println("Details: " + cheapest.getExtensions());
-                    System.out.println();     
+                    //Creates a new class of cheapPrint, and print the results
+                    cheapestFlightPrint cheapPrint = new cheapestFlightPrint();
+                    cheapPrint.printCheapestFlight(cheapest);    
 
                     //Used to print the top flight choices
                     System.out.println("___");

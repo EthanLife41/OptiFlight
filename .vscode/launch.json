@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MyProgram",
+            "request": "launch",
+            "mainClass": "MyProgram",
+            "projectName": "OptiFlight_6dd1257b"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
