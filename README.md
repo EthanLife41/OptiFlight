@@ -7,3 +7,5 @@ Thus, OptiFlight attempts to focus on the intersection of two critical areas: th
 
 
 By utilizing such techniques, this approach streamlines the user experience and also promotes fairness in the realm of air travel, allowing trip planning to be accessible to more travellers. Ultimately, OptiFlight combines technical proficiency of Java API handling with practical utility, offering both educational value and tangible benefits to users seeking affordable flight options.
+
+See Full Flowchart: https://drive.google.com/file/d/1cqjS3T8IHJfL8t1J48Yq_IlcsDlKJlU1/view?usp=sharing
