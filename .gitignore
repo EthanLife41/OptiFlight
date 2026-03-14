@@ -1,1 +1,15 @@
+# Environment variables (contains API keys)
 .env
+
+# IDE files
+.vscode/
+.idea/
+
+# Mac system files
+.DS_Store
+
+# Compiled Java files
+*.class
+
+# Logs
+*.log
