@@ -12,11 +12,16 @@ See Full Flowchart: https://drive.google.com/file/d/1cqjS3T8IHJfL8t1J48Yq_IlcsDl
 
 
 ---
+## API Key Setup
 
-## Setup
+This project requires a SerpAPI key to run.
 
-### 1. Clone the repository
+1. Create a file called `.env` in the project root.
+2. Add your SerpAPI key in the following format:
 
-```bash
-git clone https://github.com/EthanLife41/OptiFlight.git
-cd OptiFlight
+SERPAPI_KEY=your_api_key_here
+
+You can obtain a key from: https://serpapi.com/
+
+The `.env` file is ignored by Git to prevent API keys from being committed to the repository.  
+An example format is provided in `.env.example`.
