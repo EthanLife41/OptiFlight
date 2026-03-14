@@ -40,7 +40,6 @@ public class MyProgram {
                 hasMistakes = false;
             } 
        }
-        
         // Construct the URL for the API request using user input
         String urlString = "https://serpapi.com/search.json?" +
         "engine=google_flights" +
@@ -56,8 +55,7 @@ public class MyProgram {
         "&stops=1" +
         "&currency=CAD" +
         "&hl=en" +
-        "&api_key=REMOVED_API_KEY";   
-
+        "&api_key=" + parameter.get("api_key");        
         
         //Source for GET: https://www.baeldung.com/java-http-request
         try {

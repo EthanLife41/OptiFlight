@@ -1,4 +1,7 @@
 import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class input {
 
@@ -11,6 +14,21 @@ public class input {
    * 
    * @return HashMap containing flight parameters
   */
+  private String getApiKeyFromEnvFile() {
+    try (BufferedReader reader = new BufferedReader(new FileReader(".env"))) {
+      String line;
+      while ((line = reader.readLine()) != null) {
+        line = line.trim();
+        if (line.startsWith("SERPAPI_KEY=")) {
+          return line.split("=", 2)[1].trim();
+        }
+      }
+    } catch (IOException e) {
+      throw new RuntimeException("Could not read .env file.");
+    }
+
+    throw new RuntimeException("SERPAPI_KEY not found in .env file.");
+  }
   public Map<String, String> userInput(){
     Scanner input = new Scanner(System.in);
 
@@ -64,7 +82,9 @@ public class input {
     //Defines the language to use for the Google Flights search
     parameter.put("hl", "en");
     //Replace "Secret API Key" with your API key from https://serpapi.com/google-flights-api
-    parameter.put("api_key", "REMOVED_API_KEY");
+    String apiKey = getApiKeyFromEnvFile();
+    parameter.put("api_key", apiKey);
+    
     //returns the hash map
     return parameter;
   }    

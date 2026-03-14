@@ -9,6 +9,13 @@
             "name": "MyProgram",
             "request": "launch",
             "mainClass": "MyProgram",
+            "projectName": "OptiFlight_ff2c516"
+        },
+        {
+            "type": "java",
+            "name": "MyProgram",
+            "request": "launch",
+            "mainClass": "MyProgram",
             "projectName": "OptiFlight_6dd1257b"
         },
         {
